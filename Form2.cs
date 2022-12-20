@@ -1,17 +1,8 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.IO;
 using System.Linq;
-using System.Security.Policy;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Musicplayer
 {
@@ -22,7 +13,7 @@ namespace Musicplayer
         DataTable dt_Vpop = new DataTable();
         DataTable dt_MyList = new DataTable();
         DataTable dt_All = new DataTable();
-        
+
 
 
         public Form2()
@@ -46,7 +37,7 @@ namespace Musicplayer
             //loai - hinh - like - ten - casi - thoi luong - composer - bai hat - loi
             dt_Vpop.Rows.Add("VPOP", Properties.Resources.vpop1, 0, "Bên Trên Tầng Lầu", "Uyên Linh", "3:03", "Tăng Duy Tân", "D:\\Song\\song1.mp3", "Em ơi đừng khóc bóng tối trước mắt sẽ bắt em đi\r\nEm ơi đừng lo em ơi đừng cho tương lai vụt tắt.\r\nSâu trong màu mắt có chút tiếc nuối phút cuối chỉ vì\r\nEm đâu hề sai em đâu thể mãi để trái tim đau\r\n\r\nKhông còn tương lai, em cũng chẳng còn thương ai.\r\nSau bao niêm đau em mong rằng con tim em dừng lại.\r\nNỗi nhớ này lâu phai, nhốt em trong 1 lâu đài,\r\nLâu đài của những cơn đau bất tận\r\n\r\nVì sao em phải khóc?\r\nCó đáng để buồn đâu, tình yêu như cơn lốc thoáng phút chốc lướt qua thật mau.\r\nVì sao em phải khóc?\r\nCó đáng để buồn đâu, rượu kề môi em nốc, thoáng phút chốc đã vơi u sầu\r\n\r\nBuông bàn tay để chấm hết,\r\ntất cả thứ làm em buồn,\r\nbao gồm cả cuộc đời của em.\r\nEm à cho dù có khóc,\r\ncũng sẽ đến ngày phải quên,\r\nthiên đường vẫn chờ ngày em đến");
             dt_Vpop.Rows.Add("VPOP", Properties.Resources.vpop2, 0, "Chưa Quên Người Yêu Cũ", "Hà Nhi", "5:02", "Hứa Kim Tuyền", "D:\\Song\\song2.mp3", "Cũng đã gần ba năm, mà em vẫn nhớ anh nhiều lắm\r\nVẫn chưa thể yêu ai, vẫn chưa muốn bên ai\r\nThế gian này rộng lớn mà con tim chẳng to nhiều hơn\r\nChỉ vừa đủ nhớ 1 người, chỉ vừa đủ thương 1 người...\r\nĐK:\r\nĐâu phải em muốn quên, là sẽ quên, là sẽ quên\r\nĐâu phải mong hết đau, là bớt đau, là bớt đau.\r\nNhiều khi lý trí cố gắng mạnh mẽ, nhưng trái tim thật sự yếu đuối\r\nLà em giấu đi, chỉ là em giấu đi.\r\nĐâu phải yêu hết tâm, người để tâm, người để tâm.\r\nĐâu phải cho hết đi, người chẳng đi, người chẳng đi.\r\nChỉ vì đôi khi yêu thương một ai, ta chẳng mong nhận lại chi hết\r\nNgờ đâu mấy khi, tình yêu lại khiến ta hoen bờ mi\r\n(Verse 2)\r\nNhớ khi mình *** nhau, cùng đi trên chiếc xe đạp nâu\r\nLá xanh còn chưa chín, đã hẹn ước đôi mình...\r\nƯớc muôn đời bên nhau, bàn tay nắm mãi chẳng rời đâu\r\nMột câu nói trót lỡ lời...Rồi ta mất nhau một đời...\r\nĐK:\r\nĐâu phải em muốn quên, là sẽ quên, là sẽ quên\r\nĐâu phải mong hết đau, là bớt đau, là bớt đau.\r\nNhiều khi lý trí cố gắng mạnh mẽ, nhưng trái tim thật sự yếu đuối\r\nLà em giấu đi, chỉ là em giấu đi.\r\nĐâu phải yêu hết tâm, người để tâm, người để tâm.\r\nĐâu phải cho hết đi, người chẳng đi, người chẳng đi.\r\nChỉ vì đôi khi yêu thương một ai, ta chẳng mong nhận lại chi hết\r\nVà không thể quên, cũng là một cách yêu thương gọi tên.\r\n(Bridge)\r\nChẳng phải em không thể, không thể tìm được một ai khác.\r\nChỉ là vì anh đã đi để lại khoảng không khó đầy...\r\nMột mình em vẫn tốt, vẫn tự mình dịu xoa những tổn thương\r\nChờ ngày trái tim em lại yêu và yêu nhiều hơn nữa.\r\nĐâu phải em muốn quên, là sẽ quên, là sẽ quên\r\nĐâu phải mong hết đau, là bớt đau, là bớt đau.\r\nNhiều khi lý trí cố gắng mạnh mẽ, nhưng trái tim thật sự yếu đuối\r\nLà em giấu đi, chỉ là em giấu đi.\r\nĐâu phải yêu hết tâm, người để tâm, người để tâm.\r\nĐâu phải cho hết đi, người chẳng đi, người chẳng đi.\r\nChỉ vì đôi khi yêu thương một ai, ta chẳng mong nhận lại chi hết\r\nNgờ đâu mấy khi , tình yêu lại khiến ta hoen bờ mi\r\nVà không thể quên, cũng là một cách yêu thương gọi tên.");
-            dt_Vpop.Rows.Add("VPOP", Properties.Resources.vpop3,0, "Anh Chưa Thuong Em Đến vậy đâu", "Myra Trần", "4:20", "Hứa Kim Tuyền", "D:\\Song\\song3.mp3", "Em đi xem phim một mình giữa đêm\r\nVà đi karaoke một mình giữa đêm\r\nĐể biết em cô đơn làm sao\r\nĐể biết em nhớ anh nhường nào\r\n\r\nEm đi Seoul một mình ngắm tuyết rơi\r\nVà đi Bali một mình ngắm biển khơi\r\nĐể thấy em chơi vơi làm sao\r\nĐể thấy em yêu anh nhường nào\r\n\r\nSao mình không gạt bỏ đi hết những lời nói ngoài kia\r\nVà sao mình không gạt bỏ đi hết những định kiến ngoài kia\r\n\r\nGiữa ngân hà em biết đâu là\r\nBiết đâu là thế gian này mà\r\nMình bên nhau, được yêu nhau, được hôn nhau và trao nhau trái tim đậm sâu\r\n\r\nGiữa ngân hà em biết đâu là\r\nBiết đâu một sớm mai khi mà\r\nCần bao lâu, chờ bao lâu, đợi bao lâu, tình trao nhau mãi thôi đậm sâu\r\n\r\nSao mình không gạt bỏ đi hết những lời nói ngoài kia\r\nVà sao mình không gạt bỏ đi hết những định kiến ngoài kia\r\n\r\nGiữa ngân hà em biết đâu là\r\nBiết đâu là thế gian này mà\r\nMình bên nhau, được yêu nhau, được trao nhau, tình yêu sâu trái tim đậm sâu\r\n\r\nGiữa ngân hà em biết đâu là\r\nBiết đâu một sớm mai khi mà\r\nCần bao lâu, chờ bao lâu, đợi bao lâu, tình trao nhau mãi thôi đậm sâu\r\n\r\nGiữa ngân hà, giữa ngân hà, giữa ngân hà\r\nBiết đâu là, biết đâu là, biết đâu là\r\nHành tinh của hai chúng ta\r\nMột nơi của riêng chúng ta\r\n\r\nGiữa ngân hà, giữa ngân hà, giữa ngân hà\r\nBiết đâu là, biết đâu là, biết đâu là\r\nHành tinh của hai chúng ta\r\nỞ 1 thế giới còn rất xa\r\n\r\nAnh chưa yêu em (×3) đến vậy đâu.\r\nAnh chưa thương em (×3) đến vậy đâu\r\nVậy nên, người mới buông tay dễ dàng như thế\r\n\r\nNhưng em yêu anh (×3) rất đậm sâu\r\nNhưng em thương anh (×3) rất đậm sâu\r\nVậy nên, chẳng thể buông tay dễ dàng\r\n\r\nGiữa ngân hà, giữa ngân hà, giữa ngân hà\r\nBiết đâu là, biết đâu là, biết đâu là\r\nHành tinh của hai chúng ta\r\nMột nơi của riêng chúng ta\r\n\r\nGiữa ngân hà, giữa ngân hà, giữa ngân hà\r\nBiết đâu là, biết đâu là, biết đâu là\r\nHành tinh của hai chúng ta\r\nỞ 1 thế giới còn rất xa");
+            dt_Vpop.Rows.Add("VPOP", Properties.Resources.vpop3, 0, "Anh Chưa Thuong Em Đến vậy đâu", "Myra Trần", "4:20", "Hứa Kim Tuyền", "D:\\Song\\song3.mp3", "Em đi xem phim một mình giữa đêm\r\nVà đi karaoke một mình giữa đêm\r\nĐể biết em cô đơn làm sao\r\nĐể biết em nhớ anh nhường nào\r\n\r\nEm đi Seoul một mình ngắm tuyết rơi\r\nVà đi Bali một mình ngắm biển khơi\r\nĐể thấy em chơi vơi làm sao\r\nĐể thấy em yêu anh nhường nào\r\n\r\nSao mình không gạt bỏ đi hết những lời nói ngoài kia\r\nVà sao mình không gạt bỏ đi hết những định kiến ngoài kia\r\n\r\nGiữa ngân hà em biết đâu là\r\nBiết đâu là thế gian này mà\r\nMình bên nhau, được yêu nhau, được hôn nhau và trao nhau trái tim đậm sâu\r\n\r\nGiữa ngân hà em biết đâu là\r\nBiết đâu một sớm mai khi mà\r\nCần bao lâu, chờ bao lâu, đợi bao lâu, tình trao nhau mãi thôi đậm sâu\r\n\r\nSao mình không gạt bỏ đi hết những lời nói ngoài kia\r\nVà sao mình không gạt bỏ đi hết những định kiến ngoài kia\r\n\r\nGiữa ngân hà em biết đâu là\r\nBiết đâu là thế gian này mà\r\nMình bên nhau, được yêu nhau, được trao nhau, tình yêu sâu trái tim đậm sâu\r\n\r\nGiữa ngân hà em biết đâu là\r\nBiết đâu một sớm mai khi mà\r\nCần bao lâu, chờ bao lâu, đợi bao lâu, tình trao nhau mãi thôi đậm sâu\r\n\r\nGiữa ngân hà, giữa ngân hà, giữa ngân hà\r\nBiết đâu là, biết đâu là, biết đâu là\r\nHành tinh của hai chúng ta\r\nMột nơi của riêng chúng ta\r\n\r\nGiữa ngân hà, giữa ngân hà, giữa ngân hà\r\nBiết đâu là, biết đâu là, biết đâu là\r\nHành tinh của hai chúng ta\r\nỞ 1 thế giới còn rất xa\r\n\r\nAnh chưa yêu em (×3) đến vậy đâu.\r\nAnh chưa thương em (×3) đến vậy đâu\r\nVậy nên, người mới buông tay dễ dàng như thế\r\n\r\nNhưng em yêu anh (×3) rất đậm sâu\r\nNhưng em thương anh (×3) rất đậm sâu\r\nVậy nên, chẳng thể buông tay dễ dàng\r\n\r\nGiữa ngân hà, giữa ngân hà, giữa ngân hà\r\nBiết đâu là, biết đâu là, biết đâu là\r\nHành tinh của hai chúng ta\r\nMột nơi của riêng chúng ta\r\n\r\nGiữa ngân hà, giữa ngân hà, giữa ngân hà\r\nBiết đâu là, biết đâu là, biết đâu là\r\nHành tinh của hai chúng ta\r\nỞ 1 thế giới còn rất xa");
             dt_Vpop.Rows.Add("VPOP", Properties.Resources.vpop4, 0, "Ai chung tình được mãi", "Trung Quân", "4:07", "Huy Đinh", "D:\\Song\\song4.mp3", "Bình minh ơi dậy chưa cà phê sáng với tôi được không\r\nChơi vơi qua ngày đông sao thấy cô đơn và lạc lõng\r\n\r\nĐêm ơi đã ngủ chưa ngồi đây uống với tôi vài ly\r\nSay thì cứ say, yêu thì bỏ đi\r\nĐôi khi ta gặp nhau để dạy nhau cách sống trong khổ đau\r\nĐôi chân mang lặng thinh thương một người không hề toan tính\r\nĐôi khi anh dừng lại chẳng hiểu đang khóc đang đau vì ai\r\nKhóc vì, đau vì duyên mình đã sai\r\n\r\nNhiều khi muốn một mình nhưng sợ cô đơn\r\nSợ cảm giác trống vắng mỗi ngày mỗi lớn\r\nSợ chạm vào nỗi nhớ vu vơ gian gian díu díu mập mờ\r\nNắm chưa xong đã vội đổ vỡ\r\n\r\nỪ thì anh thích một mình nhưng sợ cô đơn\r\nDù đã từng nói như thế có lẽ sẽ tốt hơn\r\nChỉ là vì chẳng muốn yêu ai khi mình anh với những đêm dài\r\nNghĩ đi em đâu ai chung tình được mãi");
             dt_Vpop.Rows.Add("VPOP", Properties.Resources.vpop5, 0, "Cô Đơn Trên Sofa", "Hồ Ngọc Hà", "4:23", "Tăng Duy Tân", "D:\\Song\\song5.mp3", "Cô đơn trên sofa, con tim như tan ra\r\nDẫn lối em trôi theo một khúc ca buồn\r\nGiữa căn phòng, ánh đèn chợt tắt\r\nChe đi giọt buồn sắp rơi\r\n\r\nCô đơn trên sofa, sao anh yêu cô ta?\r\nChẳng phải anh yêu em hơn cả anh mà?\r\nĐể cho thanh xuân này chợt tắt\r\nTrên mi giọt nước mắt rơi\r\n\r\nThì ra là thế, tình nào là tình chẳng mờ phai tháng năm\r\nMột ngày vẫn trôi, đôi môi em phai màu nắng\r\nNếu không em thì anh có buồn?\r\nHóa ra chỉ mình em đáng thương\r\n\r\nĐừng buông lời hứa, rồi lại vờ rằng dường như anh đã quên\r\nĐừng tìm đến em, gieo tương tư xong lại đi\r\nNắng xuyên qua hàng mi rối bời\r\nGiữ tim em vài giây cuối thôi\r\n\r\nĐể em được ngã lưng lên một chiếc sofa\r\nĐể nghe một phút tim yên bình đến kỳ lạ\r\nĐể em được sống vô tư như một bông hoa, giữa bầu trời kiêu sa\r\nCho em thôi miệt mài nghĩ suy\r\n\r\nNgười ơi hãy nói em nghe một lý do đi\r\nVì sao lại để em vương sầu trên khóe mi?\r\nVì sao lại biến cô đơn thành giông tố, nỗi buồn sóng vỗ?\r\nTâm hồn em trôi lênh đênh trong căn phòng, rồi lại rơi xuống trên sofa");
             dt_Vpop.Rows.Add("VPOP", Properties.Resources.vpop6, 0, "Người Như Anh", "Mai Tiến Dũng", "4:50", "Hùng Quân", "D:\\Song\\song6.mp3", "Và rồi hôm ấy mình rời bước, cách xa nhau\r\nDẫu hai ta chẳng giận hờn\r\nNhưng cảm giác bên nhau ngày một xa hơn\r\nLời hứa ta đã từng dành cho nhau\r\nGiờ chúng ta xếp lại ngày ngày mai sau\r\nEm khóc cho bao mộng mơ\r\nAnh khóc cuộc tình bơ vơ\r\nChúng ta, gần nhau mà như cách xa\r\nChúng ta, gần nhau mà lòng băng giá\r\nTình yêu có phải khi ta chấp nhận\r\nRời xa để thấy yêu nhau nhiều hơn?\r\nAnh mong rằng em sẽ có một người\r\nYêu em, cùng em đến hết cuộc đời\r\nMột người mới luôn khiến em vui,\r\nChẳng phải như anh chỉ làm em khóc\r\nNước mắt cho em đã quá đủ rồi\r\nNỗi xót xa em nhận lấy nhiều rồi\r\nXin lỗi anh không như những gì mà em mong\r\nMột người như anh\r\nVà anh biết, rằng nơi trái tim em còn\r\nCòn mong nhớ anh từng giờ\r\nNỗi đau anh biết rằng là, thật khó để mình quên đi\r\nVà anh cũng chẳng làm sao để xóa đi được\r\nDù đôi lúc anh bật khóc bao đêm\r\nChẳng biết bao lâu anh quên ngày mình bên nhau\r\nAnh mong rằng em sẽ có một người\r\nYêu em, cùng em đến hết cuộc đời\r\nMột người mới luôn khiến em vui,\r\nChẳng phải như anh chỉ làm em khóc\r\nNước mắt cho em đã quá đủ rồi\r\nNỗi xót xa em nhận lấy nhiều rồi\r\nXin lỗi anh không như những gì mà em mong\r\nMột người như anh");
@@ -80,7 +71,7 @@ namespace Musicplayer
             dt_Viral.Rows.Add("VIR", Properties.Resources.img10, 0, "Cám dỗ", "Myra Trần", "3:27", "Hứa Kim Tuyền", "D:\\Song\\8 Xem nhu em chang may.mp3", "\"Người hôm qua em thấy là ai đấy\r\nSao anh lại chết lặng như vậy\r\nMột giờ đêm sao anh còn chưa nhắn tin về\r\nEm cứ mãi ngẩn ngơ chờ anh\r\n\r\nTại sao yêu đến thế lại gian dối\r\nCon tim em vỡ tan mất rồi\r\nTưởng chừng ta hạnh phúc cùng nhau đến muôn đời\r\nChưa buông tay anh thay áo mới\r\n\r\nNgọt ngào đến mấy cũng tan thành mây\r\nDại khờ thuở ấy khi đan bàn tay\r\nYêu thương trao hết chỉ giữ lại đây thân gầy\r\nXem như em chẳng may\r\n\r\nNỗi buồn em giấu sau lớp màn mưa\r\nGượng cười khi biết em là người giữa hai người\r\nCòn lại gì cho nhau\r\nNgoài những lời ngôn tình quá dư thừa\r\n\r\nEm không muốn nghe\r\nHeh\r\nEm không muốn nghe\r\nHeh\r\n\"");
             dt_Viral.Rows.Add("VIR", Properties.Resources.img11, 0, "Dạ vũ", "Hà Nhi", "4:22", "Tăng Duy Tân", "D:\\Song\\8 Xem nhu em chang may.mp3", "\"Người hôm qua em thấy là ai đấy\r\nSao anh lại chết lặng như vậy\r\nMột giờ đêm sao anh còn chưa nhắn tin về\r\nEm cứ mãi ngẩn ngơ chờ anh\r\n\r\nTại sao yêu đến thế lại gian dối\r\nCon tim em vỡ tan mất rồi\r\nTưởng chừng ta hạnh phúc cùng nhau đến muôn đời\r\nChưa buông tay anh thay áo mới\r\n\r\nNgọt ngào đến mấy cũng tan thành mây\r\nDại khờ thuở ấy khi đan bàn tay\r\nYêu thương trao hết chỉ giữ lại đây thân gầy\r\nXem như em chẳng may\r\n\r\nNỗi buồn em giấu sau lớp màn mưa\r\nGượng cười khi biết em là người giữa hai người\r\nCòn lại gì cho nhau\r\nNgoài những lời ngôn tình quá dư thừa\r\n\r\nEm không muốn nghe\r\nHeh\r\nEm không muốn nghe\r\nHeh\r\n\"");
 
-            
+
             dt_All.Merge(dt_Viral);
             dt_All.Merge(dt_Vpop);
 
@@ -165,7 +156,7 @@ namespace Musicplayer
 
                         var toDelete = dt_Liked.AsEnumerable().
                             Where(r => r.Field<string>("tenbaihat") == c_songname.Text);
-                        
+
                         foreach (DataRow rowToDelete in toDelete)
                             rowToDelete.Delete();
                         dt_Liked.AcceptChanges();
@@ -292,7 +283,7 @@ namespace Musicplayer
         {
             foreach (Control c in this.Controls)
             {
-                if (c is Panel && c != pan_home && c!= pan_navbar)
+                if (c is Panel && c != pan_home && c != pan_navbar)
                 {
                     c.Visible = false;
                 }
@@ -382,7 +373,7 @@ namespace Musicplayer
                 foreach (var line in rows)
                 {
                     int index = dt_Viral.Rows.IndexOf(line);
-                        dt_MyList.ImportRow(line);
+                    dt_MyList.ImportRow(line);
                 }
             }
 
@@ -395,7 +386,7 @@ namespace Musicplayer
                 foreach (var line in rows)
                 {
                     int index = dt_Vpop.Rows.IndexOf(line);
-                        dt_MyList.ImportRow(line);    
+                    dt_MyList.ImportRow(line);
                 }
             }
             c_add.Visible = false;
@@ -450,7 +441,7 @@ namespace Musicplayer
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
-        { 
+        {
 
             uc_cmt uc_cmt = new uc_cmt();
             uc_cmt usercmt = uc_cmt;
@@ -553,7 +544,7 @@ namespace Musicplayer
                     int index = dt_MyList.Rows.IndexOf(line);
                     c_lyrics.Text = dt_MyList.Rows[index]["loibaihat"].ToString();
                     c_like.Visible = false;
-                    c_add.Visible=false;
+                    c_add.Visible = false;
                 }
                 c_add.Visible = false;
             }
@@ -620,7 +611,7 @@ namespace Musicplayer
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
-        { 
+        {
             flowLayoutPanel1.Controls.Clear();
 
             uc_songlist[] songlists = new uc_songlist[1000];
@@ -630,21 +621,23 @@ namespace Musicplayer
             EnumerableRowCollection<DataRow> matches;
 
             //var matches = dt_MyList.AsEnumerable().Where(r => r.Field<string>("tenbaihat").Contains(comboBox1.Text));
-            if (comboBox1.Text.Length < 2) { 
+            if (comboBox1.Text.Length < 2)
+            {
                 stringComparison = StringComparison.Ordinal; //bỏ qua viet HOA
                 matches = dt_All.AsEnumerable().Where(row => row.Field<string>("tenbaihat").IndexOf(comboBox1.Text.ToString().ToUpper(), stringComparison) != -1);
 
             }
 
-            else {
-                 stringComparison = StringComparison.OrdinalIgnoreCase; //bỏ qua viet HOA
+            else
+            {
+                stringComparison = StringComparison.OrdinalIgnoreCase; //bỏ qua viet HOA
                 matches = dt_All.AsEnumerable().Where(row => row.Field<string>("tenbaihat").IndexOf(comboBox1.Text.ToString(), stringComparison) != -1);
             }
 
 
 
             foreach (var match in matches)      //tạo list cac bai hat da tim thay
-            { 
+            {
                 int index = dt_All.Rows.IndexOf(match);
 
                 songlists[i] = new uc_songlist();
@@ -666,7 +659,8 @@ namespace Musicplayer
             }
 
 
-            if(comboBox1.Text.Length > 1){
+            if (comboBox1.Text.Length > 1)
+            {
                 stringComparison = StringComparison.OrdinalIgnoreCase; //bỏ qua viet HOA
                 matches = dt_All.AsEnumerable().Where(row => row.Field<string>("tencasi").IndexOf(comboBox1.Text.ToString(), stringComparison) != -1);
 
@@ -696,7 +690,7 @@ namespace Musicplayer
 
         private void comboBox1_TextChanged(object sender, EventArgs e)
         {
-            pictureBox3_Click(sender, e); 
+            pictureBox3_Click(sender, e);
         }
     }
 }
