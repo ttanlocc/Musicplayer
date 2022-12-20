@@ -144,7 +144,7 @@ namespace Musicplayer
 
             if (a_type.Text == "Viral" || a_type.Text == "Liked")
             {
-
+                //Liked
                 var rows = dt_Viral.AsEnumerable()
                    .Where(r => r.Field<string>("tenbaihat") == c_songname.Text);
 
@@ -165,18 +165,7 @@ namespace Musicplayer
 
                         var toDelete = dt_Liked.AsEnumerable().
                             Where(r => r.Field<string>("tenbaihat") == c_songname.Text);
-
-
-                        //var likedrow = dt_Liked.AsEnumerable()
-                        //    .Where(r => r.Field<string>("tenbaihat") == c_songname.Text);
-
-                        //foreach (var row in likedrow)
-                        //{
-                        //    int i = dt_Liked.Rows.IndexOf(line);
-                        //    dt_Liked.Rows.Remove(row);
-                        //    dt_Liked.AcceptChanges();a
-                        //}
-
+                        
                         foreach (DataRow rowToDelete in toDelete)
                             rowToDelete.Delete();
                         dt_Liked.AcceptChanges();
